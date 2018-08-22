@@ -1,5 +1,5 @@
 # Tic-Tak-Toe
-Tic Tak Toe Game made in Python 3
+Tic Tak Toe Game for 2 players made in Python 3x
 
 Steps to Run :<br>
 - Python3 must be installed in your System.
