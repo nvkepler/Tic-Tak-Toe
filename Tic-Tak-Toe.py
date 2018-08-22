@@ -7,11 +7,11 @@ def display_board(board):
 
     for i in range(1, len(board) + 1, 3):
         if count < 3:
-            print('   |   |   ')
-            print(' ' + board[i] + ' | ' + board[i + 1] + ' | ' + board[i + 2])
-            print('   |   |   ')
+            print('   |   |   \t\t\t\t   |   |   ')
+            print(f' {i} | {i+1} | {i+2} \t\t\t\t' + ' ' + board[i] + ' | ' + board[i + 1] + ' | ' + board[i + 2])
+            print('   |   |   \t\t\t\t   |   |   ')
             if count_hor < 2:
-                print('-----------')
+                print('-----------\t\t\t\t-----------')
                 count_hor += 1
             count += 1
 
@@ -82,9 +82,10 @@ if __name__ == '__main__':
         theBoard = [' '] * 10
         player1_marker, player2_marker = player_input()
         turn = choose_first()
+        print()
         print(turn + ' will go first.')
 
-        play_game = input('Are you ready to play? Enter Yes or No.')
+        play_game = input('\nAre you ready to play? Enter Yes or No.')
 
         if play_game.lower()[0] == 'y':
             game_on = True
@@ -101,7 +102,7 @@ if __name__ == '__main__':
 
                 if win_check(theBoard, player1_marker):
                     display_board(theBoard)
-                    print('Congratulations! You have won the game!')
+                    print('Congratulations! Player 1 has won the game!')
                     game_on = False
                 else:
                     if full_board_check(theBoard):
@@ -120,7 +121,7 @@ if __name__ == '__main__':
 
                 if win_check(theBoard, player2_marker):
                     display_board(theBoard)
-                    print('Player 2 has won!')
+                    print('Congratulations! Player 2 has won the game!')
                     game_on = False
                 else:
                     if full_board_check(theBoard):
