@@ -16,11 +16,11 @@ def display_board(board):
             count += 1
 
 
-def player_input():
+def player_input(p):
     choice = ''
 
     while choice != 'X' and choice != 'O':
-        choice = input("Player 1 : Enter 'X' or 'O' : ").upper()
+        choice = input(f"{p} -> Enter 'X' or 'O' : ").upper()
 
     if choice == 'X':
         return 'X', 'O'
@@ -75,15 +75,22 @@ def replay():
 
 
 if __name__ == '__main__':
-    print('Welcome to Tic Tac Toe!')
+    print('\n********  Welcome to Tic Tac Toe!  ********\n')
+    p1 = input('PLAYER 1, Enter your Name : ').title()
+    p2 = input('PLAYER 2, Enter your Name : ').title()
 
     while True:
         # Reset the board
         theBoard = [' '] * 10
-        player1_marker, player2_marker = player_input()
-        turn = choose_first()
         print()
-        print(turn + ' will go first.')
+        player1_marker, player2_marker = player_input(p1)
+        turn = choose_first()
+        if(turn == 'Player 1'):
+            p = p1
+        else:
+            p = p2
+        print()
+        print(p + ' will go first.')
 
         play_game = input('\nAre you ready to play? Enter Yes or No.')
 
@@ -102,7 +109,7 @@ if __name__ == '__main__':
 
                 if win_check(theBoard, player1_marker):
                     display_board(theBoard)
-                    print('Congratulations! Player 1 has won the game!')
+                    print(f'\nCongratulations! {p1}, You have won the game!\n')
                     game_on = False
                 else:
                     if full_board_check(theBoard):
@@ -121,15 +128,16 @@ if __name__ == '__main__':
 
                 if win_check(theBoard, player2_marker):
                     display_board(theBoard)
-                    print('Congratulations! Player 2 has won the game!')
+                    print(f'\nCongratulations! {p2}, You have won the game!\n')
                     game_on = False
                 else:
                     if full_board_check(theBoard):
                         display_board(theBoard)
-                        print('The game is a draw!')
+                        print('\nThe game is a draw!\n')
                         break
                     else:
                         turn = 'Player 1'
 
         if not replay():
+            print('\nThank You for Playing! Have a nice day...')
             break
