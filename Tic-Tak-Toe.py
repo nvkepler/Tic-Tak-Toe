@@ -1,3 +1,6 @@
+# Made by Neelesh Vashist
+# Tic Tak Toe Game for 2 Players
+
 import random
 
 
