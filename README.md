@@ -14,6 +14,7 @@ Steps to Run :<br>
     ```
   - Clone Commands :
     ```
+    pwd
     cd "Directory/Folder Name in which you want to clone"
     git clone https://github.com/nvkepler/Tic-Tak-Toe.git
     ```
@@ -24,4 +25,4 @@ Steps to Run :<br>
   python3 Tic-Tak-Toe.py
   ```
   
-  _ENJOY THE GAME!_
+  :smile: **_ENJOY THE GAME!_** :thumbsup:
