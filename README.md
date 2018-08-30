@@ -1,7 +1,6 @@
-# Tic-Tak-Toe
-Tic Tak Toe Game for 2 players made in Python 3x
+# Python-Projects
 
-Steps to Run :<br>
+Steps to Run these Programs:<br>
 - Python3 must be installed in your System.
   - To download Python3, refer this [link](https://www.python.org/)
 - Download this repo...
@@ -16,13 +15,13 @@ Steps to Run :<br>
     ```
     pwd
     cd "Directory/Folder Name in which you want to clone"
-    git clone https://github.com/nvkepler/Tic-Tak-Toe.git
+    git clone https://github.com/nvkepler/Python-Projects.git
     ```
 - If you are using a IDE, simply run the program
 - If you are using Terminal, then follow these commands :
   ```
-  cd Tic-Tak-Toe
-  python3 Tic-Tak-Toe.py
+  cd Python-Projects
+  python3 program_name.py
   ```
   
-  :smile: **_ENJOY THE GAME!_** :thumbsup:
+  :smile: **_ENJOY THE PROJECTS!_** :thumbsup:
