@@ -1,6 +1,9 @@
 # Made by Neelesh Vashist
 # Tic Tak Toe Game for 2 Players
 
+
+#!/bin/python3
+
 import random
 
 
