@@ -1,4 +1,4 @@
-# Python-Mini-Projects
+# Tik-Tak-Toe
 
 Steps to Run these Programs:<br>
 - Python3 must be installed in your System.
@@ -15,7 +15,7 @@ Steps to Run these Programs:<br>
     ```
     pwd
     cd "Directory/Folder Name in which you want to clone"
-    git clone https://github.com/nvkepler/Python-Mini-Projects.git
+    git clone https://github.com/nvkepler/Tic-Tak-Toe.git
     ```
 - If you are using a IDE, simply run the program
 - If you are using Terminal, then follow these commands :
@@ -24,4 +24,4 @@ Steps to Run these Programs:<br>
   python3 program_name.py
   ```
   
-  :smile: **_ENJOY THE PROJECTS!_** :thumbsup:
+  :smile: **_ENJOY THE GAME!_** :thumbsup:
